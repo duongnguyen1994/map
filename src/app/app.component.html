@@ -1,0 +1,9 @@
+<agm-map [latitude]="la" [longitude]="ln" [zoom]="18" (mapReady)="mapReadyHandler($event)">
+  <!-- <agm-marker [latitude]="location.marker.latitude" [longitude]="location.marker.longitude"></agm-marker> -->
+  <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
+  <agm-marker [latitude]="la" [longitude]="ln" [iconUrl]='icon'></agm-marker>
+  <agm-direction
+        [origin]="origin"
+        [destination]="destination"
+    ></agm-direction>
+</agm-map>
